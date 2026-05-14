@@ -1,0 +1,103 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.screen{
+    width: 90vw;
+    height: 90vh;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.target-parent{
+    width: 500px;
+    height: 650px;
+    position: relative;
+    margin-top: 60px;
+}
+
+
+.child1{
+    width: 100%;
+    height: 80%;
+    top: 60px;
+    background-color: #d3060c;
+    position: absolute;
+    /* transform: translate(-70% -70%); */
+    border-radius: 90%;
+    overflow: hidden;
+}
+
+.child2{
+    width: 90%;
+    height: 88%;
+    background-color: #0436b7;
+    border-radius: 90%;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+
+.child3{
+    width: 86%;
+    height: 86%;
+    background-color: #026922;
+    border-radius:90% ;
+    position: absolute;
+    right: 30px;
+    top: 30px ;
+}
+
+.child4{
+    width: 85%;
+    height: 85%;
+    background-color: #d7d600;
+    border-radius: 90%;
+    position: absolute;
+    right: 30px ;
+    top: 30px;
+}
+
+.child5{
+    width: 83%;
+    height: 83%;
+    background-color: #d88a00;
+    border-radius: 90%;
+    position: absolute;
+    right: 29px;
+    top: 29px;
+}
+
+.child6{
+    width: 80%;
+    height: 80%;
+    background-color: #5b005b;
+    border-radius: 90%;
+    position: absolute;
+    right: 27px;
+    top: 27px;
+}
+
+.child7{
+    width:80%;
+    height: 80%;
+    background-color: #d98bd9;
+    border-radius: 90%;
+    position: absolute;
+    right: 23px;
+    top: 23px;
+}

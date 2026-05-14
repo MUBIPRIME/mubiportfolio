@@ -1,0 +1,143 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+box-sizing: border-box;
+list-style-type: none;
+font-family: 'JetBrains Mono', sans-serif;
+                                                                               
+}
+
+.logo{
+    color: #0069FF;
+}
+
+
+.alert{
+    border:2px solid black;
+    align-items: center;
+    display: flex;
+    padding: 9px;
+    background-color: #1433D6;
+    justify-content: space-evenly;
+    border: none;
+    font-size: .9em;
+    width: 100%;
+    gap: 10em;
+
+}
+
+
+.left-alert a{
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+    gap: .6em;
+
+}
+
+
+.left-alert a:hover{
+    text-decoration: underline;
+}
+
+.right-alert{
+display: flex;
+gap: 1.2em;
+}
+
+.right-alert a{
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.right-alert a:hover{
+    text-decoration: underline;
+}
+
+header{
+border-bottom: thin solid rgb(225, 215, 215);
+
+
+}
+
+nav{
+    border: 2px solid black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    border: none;
+    /* font-size: 10em; */
+    
+}
+
+.menu-list{
+    display: flex;
+    gap: 3em;
+}
+
+.menu-list li a{
+    color: #67686c;
+}
+
+.list{
+    border-radius: 50px;
+    /* border: 2px solid black; */
+    padding: 10px 12px;
+    
+}
+
+
+.menu-list .list:hover{
+    background-color: #EFF2FB;
+}
+
+.menu-list .list:hover a{
+    color: #484E7D;
+}
+
+.login-btn {
+    /* border: 2px solid black; */
+padding: 10px 20px;
+border-radius: 20px;
+border: none;
+background: transparent;
+font-size: 1rem;
+}
+
+.login-btn a{
+    color: #67696c;
+    text-decoration: none;
+    
+}
+
+ .btnss .login-btn:hover {
+    background-color: #EFF2FB;
+ }
+
+ .btnss .login-btn:hover a{
+    color: black;
+ }
+    
+
+ .signup-btn{
+    border:  2px solid red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #0C73EE;
+    font-size: 1rem;
+    border: none;
+ }
+
+ .signup-btn a{
+    color: #FAF9F9;
+ }
+
+ .btnss .signup-btn:hover{
+    background-color: #1433D6;
+ }
+
+ 

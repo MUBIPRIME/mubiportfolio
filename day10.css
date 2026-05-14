@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #e8e8e8;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px gray;
+}
+
+.hero-sect{
+    border: 2px solid black;
+    position: relative;
+    top: 115px;
+    height: 60vh;
+    background-image: linear-gradient(to right,#2c1762 50%, #E20773);
+    border: none;
+}
+
+.hero-sect h1{
+    color: white;
+}
+
+.second-sect{
+    border: 3px solid green;
+}
