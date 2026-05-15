@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(to top, aqua -10%, white) ;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-bottom: 400px;
+    margin-left: 80%;
+    box-shadow: 0 0 30px  gold;
+
+    position: fixed;
+    border: none;
+    /* animation: sun-glow 4s ease-in-out infinite; */
+
+}
+/* @keyframes sun-glow{
+  0%{
+    transform: scale(1);
+    box-shadow: 0 0 20px #f1c40f, 0 0 40px #f39c12;
+  }
+  50%{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #f1c40f, 0 0 80px #f39c12;
+  }
+  100%{
+     transform: scale(1);
+    box-shadow: 0 0 20px #f1c40f, 0 0 40px #f39c12;
+  }
+
+} */
+
+
+.cloud{
+    background-color: rgba(255, 255, 255, 0.977);
+    border-radius: 80px 30px;
+    border: 2px solid black;
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    filter: blur(1px);
+    margin-left: 100px;
+    margin-bottom: 200px;
+    border: none;
+  animation: float 5s infinite linear;
+}
+
+@keyframes float {
+  from 
+  { transform: translateX(0); }
+  to 
+  { transform: translateX(560px); }
+}
+
+
+.cloud:nth-child(1) {
+  left: 5%;
+}
+
+.cloud:nth-child(2) {
+  left: 20%;
+}
+
+.cloud:nth-child(3) {
+  left: 40%;
+}
+
+.building{
+    position: absolute;
+    height: 300px;
+    width: 80px;
+    border: 2px solid black;
+    margin-top: 250px;
+    background-color: gray;
+    bottom: 70px;
+    border: none;
+    
+}
+
+.roof{
+height: 10px;
+width: 100%;
+margin-top: 10px;
+background-color: #999;
+border: 2px solid black;
+position: absolute;
+top: 0;
+border: none;
+}
+
+
+.window.strip{
+width: 60%;
+height: 10px;
+background-color: blue;
+/* margin: 5px 0; */
+margin-top: 40%;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-left: 15px;
+}
+
+.strip {
+margin-top: 10%;
+ width: 60%;
+height: 10px;
+background-color: blue;
+margin-top: 30%;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-left: 15px;
+}
+
+.tree{
+    position: absolute;
+    border: 100px;
+    width: 30px;
+    margin-left: 10px;
+    height: 120px;
+    border: 2px solid black;
+    margin-top: 25%;
+    background-color: #e67d22;
+    border: none;
+}
+
+.tree::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    width: 80px;
+    height: 80px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+}
+
+/* .tree::after{
+    contain: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 20px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: #e67e22;
+
+} */
+
+.road{
+position: absolute;
+width: 100%;
+background-color: black;
+height: 73px;
+bottom: 0;
+}
+
+.road-line{
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 45%;
+   background-image: linear-gradient(
+    to right, 
+    #f1c40f 0%,    
+    #f1c40f 60%,   
+    transparent 60%, 
+    transparent 100% 
+  );
+  background-size: 50px 100%; 
+  background-repeat: repeat-x; 
+  /* animation: drive 1s linear infinite; */
+}
+
+@keyframes drive{
+    from {background-position: 0 0;
+    }
+    to{
+        background-position: -50px 0;
+    }
+}
+
+.van{
+    position: absolute;
+    /* border: 2px solid black; */
+    width: 150px;
+    height: 70px;
+   margin-top: 29%;
+   animation: drive-forward 10s linear infinite;
+}
+
+@keyframes drive-forward{
+    from{
+        left: -150px;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+.van-body{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    border: 2px solid black;
+    /* border: none; */
+    background-color: orange;
+    right: 0;
+    /* border-radius: 4px 15px 0px 0px; */
+    margin-top:29px;
+    border-top-right-radius: 20px;
+
+}
+
+
+.cabin{
+    position: absolute;
+    width: 97px;
+    margin-left: 5px;
+    height: 68px;
+    margin-top: 1px;
+    background-color: rgba(239, 237, 232, 0.986);
+    border: 2px solid black;
+}
+
+.door{
+    position: absolute;
+    justify-content: ;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.door2{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.wheel{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 105px;
+    margin-top:55px ;
+    height: 25px;
+    width: 25px;
+    border: none;
+    
+    
+}
+
+.front-wheel{
+    background-color: black;
+}
+
+.back-wheel{
+    position: absolute;
+    margin-top: 55px;
+    border: 2px solid black;
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+    background-color: black;
+
+}
+
+.in-wheel{
+    position: absolute;
+    border: 2px solid black;
+    height: 15px;
+    width: 15px;
+    margin-left: 22px;
+    top: 5px;
+    left: 3px;
+    
+
+}
+
+.out-wheel{
+    position: absolute;
+    border: 2px solid black;
+    height: 15px;
+    width: 15px;
+    margin-left: 107px;
+    top: 5px;
+    left: 3px;
+    background-color: white;
+    
+}
+
+.smoke-container{
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  border: 2px solid black;
+}
+
+.puff{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-top: 60px;
+  background: rgba(150, 150, 150, 0.6);
+  border-radius: 50%;
+  animation: exhaust 1s linear infinite;
+}
+
+@keyframes exhaust{
+    0%{
+        transform: translate(0,0) scale();
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: translate(-50px) scale(2);
+        opacity: 0;
+    }
+}
